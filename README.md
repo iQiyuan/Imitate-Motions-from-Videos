@@ -4,6 +4,9 @@ Motion imitation is a challenging task in robotics and computer vision, typicall
 | ![details](figure/demo.png) | ![example](figure/example.gif) |
 | --------------------------- | ------------------------------ |
 
+# Overall Framework
+The model first extracts motion information represented by skeletal structure from the target human arm motion videos. Then, it retargets the arm motions morphologically to match those of a robotic manipulator, making them essentially equivalent. This facilitates the subsequent generation of reference motions for the robotic manipulator to imitate. The generated reference motions are then utilized to formulate a reinforcement learning problem, enabling the model to learn a policy to imitate human arm motions or apply a learned policy to imitate unfamiliar motions.
+
 ## Installation & Setups
 Clone the repository and cd to Imitation-main directory.
 ```bash
